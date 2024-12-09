@@ -78,6 +78,40 @@ body {
   font-family: var(--default-font);
 }
 
+
+
+
+/* تخصيص شريط التمرير */
+::-webkit-scrollbar {
+  width: 20px;
+  /* زِد العرض */
+  /* زِد العرض للأفقي */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffc451;
+  /* اللون المميز */
+  border-radius: 10px;
+  /* زوايا مستديرة */
+  border: 5px solid #f1f1f1;
+  /* حد خارجي */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e6a931;
+  /* لون عند التمرير */
+}
+
+::-webkit-scrollbar-track {
+  background: #f9f9f9;
+  /* لون المسار */
+  border-radius: 8px;
+} 
+
+
+
+
+
 a {
   color: var(--accent-color);
   text-decoration: none;
