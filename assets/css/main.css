@@ -1817,49 +1817,65 @@ section,
   /* Darker shadow on hover */
 }
 
+
 .message-box {
-  background-color: #fff;
-  /* White background */
-  color: #333;
-  /* Dark text color for contrast */
+  background-color: var(--surface-color);
+  /* خلفية بيضاء */
+  color: var(--contrast-color);
+  /* لون النص */
   padding: 30px 40px;
-  border-radius: 25px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Subtle shadow for better appearance */
+  border-radius: 15px;
+  /* حواف مستديرة بشكل أنيق */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  /* ظل خفيف */
   text-align: center;
   margin-top: 50px;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'Pacifico';
+  font-family: 'Montserrat', sans-serif;
+  /* خط حديث */
+  transition: all 0.3s ease-in-out;
 }
 
 .message-box p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 1.6;
   margin: 0;
+  color: var(--default-color);
+  /* لون افتراضي للنص */
 }
 
 .message-box strong {
   font-size: 1.8rem;
-  color: #000;
-  /* Black color for the name */
+  color: var(--accent-color);
+  /* لون العنوان المميز */
   display: block;
   margin-top: 10px;
+  font-weight: bold;
 }
 
 .students-info {
-  font-size: 1.25rem;
-  color: #555;
-  /* Slightly lighter grey for the additional info */
-  margin-top: 20px;
+  font-size: 1.2rem;
+  color: var(--default-color);
+  /* لون هادئ */
+  margin-top: 15px;
+  font-style: italic;
 }
 
-/* Hover effect for the message box */
+/* تأثير الـ Hover */
 .message-box:hover {
-  background-color: #f4f4f4;
-  /* Light grey on hover */
-  transform: scale(1.05);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease-in-out;
+  background-color: var(--contrast-color);
+  /* لون متباين */
+  color: var(--heading-color);
+  /* تباين النص */
+  transform: translateY(-5px);
+  /* حركة خفيفة لأعلى */
+  box-shadow: 0 12px 18px rgba(0, 0, 0, 0.25);
+  /* ظل أقوى عند الـ Hover */
+}
+
+.message-box:hover strong {
+  color: var(--accent-color);
+  /* يظل اللون المميز */
 }
